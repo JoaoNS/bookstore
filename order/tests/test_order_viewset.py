@@ -16,8 +16,12 @@ class TestOrderViewSet(APITestCase):
 
     def setUp(self):
         self.category = CategoryFactory(title="technology")
-        self.product = ProductFactory(title="mouse", price=100, category=[self.category])
-        self.order = OrderFactory([self.product])
+
+        self.product = ProductFactory(title="mouse", price=100)
+        self.product.category.add(self.category)
+
+        self.order = OrderFactory()
+        self.order.product.add(self.product)
 
     def test_order(self):
         response = self.client.get(
