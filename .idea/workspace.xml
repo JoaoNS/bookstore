@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="987742d7-2129-413a-b2a9-ed0e8d34d1cc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bookstore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bookstore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/tests/test_order_viewset.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/tests/test_order_viewset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/viewsets/order_viewset.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/viewsets/order_viewset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/tests/test_category_viewset.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/tests/test_category_viewset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/tests/test_product_viewset.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/tests/test_product_viewset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/viewsets/category_viewset.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/viewsets/category_viewset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/viewsets/product_viewset.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/viewsets/product_viewset.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +28,9 @@
   "associatedIndex": 7
 }]]></component>
   <component name="ProjectId" id="34Eyirj3MI4dlSh4qsjsvPDMt1S" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
