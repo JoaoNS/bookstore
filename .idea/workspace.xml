@@ -7,6 +7,8 @@
     <list default="true" id="987742d7-2129-413a-b2a9-ed0e8d34d1cc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env.dev" beforeDir="false" afterPath="$PROJECT_DIR$/env.dev" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/viewsets/product_viewset.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/viewsets/product_viewset.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,7 @@
     "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "docker-network",
+    "git-widget-placeholder": "github-actions",
     "last_opened_file_path": "C:/Users/joaop/OneDrive/Desktop/EBAC/Ebac-back-end/bookstore/product/tests",
     "settings.editor.selected.configurable": "preferences.fileTypes"
   }
