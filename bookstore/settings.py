@@ -13,7 +13,8 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 import os
 from pathlib import Path
 
-from django.conf.global_settings import INTERNAL_IPS
+from django.conf import STATICFILES_STORAGE_ALIAS
+from django.conf.global_settings import INTERNAL_IPS, STATIC_ROOT
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,6 +28,8 @@ SECRET_KEY = "django-insecure-l@tw9mr%r((n&jf&^o1sq_m5a*w$puh6^68hmqxr(2)%njv+*p
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'jubs-bookstore-api.herokuapp.com']
 
 ALLOWED_HOSTS = []
 
@@ -50,6 +53,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -77,7 +81,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "bookstore.wsgi.application"
-
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
@@ -146,10 +149,6 @@ REST_FRAMEWORK = {
 
 INTERNAL_IPS = ["127.0.0.1"]
 
-SECRET_KEY = os.environ.get("SECRET_KEY", "key")
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-DEBUG = os.environ.get("DEBUG", "True") == "True"
-
-# 'DJANGO_ALLOWED_HOSTS' should be a single string of hosts with a space between each.
-# For example: 'DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]'
-ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "localhost 127.0.0.1").split(" ")
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
