@@ -7,12 +7,12 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [3.8, 3.9, 3.13]
+        python-version: [3.13]
 
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v5
 
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
@@ -24,7 +24,6 @@ jobs:
         python -m ensurepip
         python -m pip install --upgrade pip
         python -m pip install --upgrade poetry
-
     - name: View poetry --help
       run: poetry --help
 
