@@ -29,7 +29,7 @@ SECRET_KEY = "django-insecure-l@tw9mr%r((n&jf&^o1sq_m5a*w$puh6^68hmqxr(2)%njv+*p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'jubs-bookstore-api.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'jubs.pythonanywhere.com']
 
 ALLOWED_HOSTS = []
 
