@@ -1,0 +1,31 @@
+services:
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    environment:
+      DJANGO_ALLOWED_HOSTS: localhost 127.0.0.1 [::1]
+      DEBUG: "True"
+      SQL_ENGINE: django.db.backends.postgresql
+      SQL_DATABASE: bookstore_db
+      SQL_USER: bookstore_dev
+      SQL_PASSWORD: password
+      SQL_HOST: db
+      SQL_PORT: 5432
+      SECRET_KEY: "key"
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: bookstore_db
+      POSTGRES_USER: bookstore_dev
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+volumes:
+  postgres_data:
