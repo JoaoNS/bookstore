@@ -25,6 +25,7 @@ ENV PATH="$POETRY_HOME/bin:$VENV_PATH/bin:$PATH"
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
         curl \
+        git \
         build-essential \
         libpq-dev \
         gcc && \
